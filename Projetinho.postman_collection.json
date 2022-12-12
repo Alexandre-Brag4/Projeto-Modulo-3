@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "60216578-42e5-4b3e-a50c-d027120a8e5e",
+		"name": "Projetinho",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24685261"
+	},
+	"item": [
+		{
+			"name": "MÉTODO GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/funcionarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"funcionarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MÉTODO POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"DELSON MANDELA\",\r\n    \"endereco\": \"Rua Alpha Rico\",\r\n    \"bairro\": \"Alpha Vile\",\r\n    \"cidade\": \"São Paulo\",\r\n    \"email\": \"DelsonMandelaProgramador@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/funcionarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"funcionarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MÉTODO PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Airton Rodrigues da Silva\",\r\n    \"endereco\": \"Rua do Céu\",\r\n    \"bairro\": \"Augusto Vasconcelos\",\r\n    \"cidade\": \"Rio de Janeiro\",\r\n    \"email\": \"RoAirtonDaSilva@gmail.com\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/funcionarios/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"funcionarios",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MÉTODO DELETE",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
